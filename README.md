@@ -251,5 +251,3 @@ For issues and questions:
 - [ ] API rate limiting and authentication
 
 ---
-
-**Built with ❤️ for image authenticity and digital forensics research.**
