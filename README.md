@@ -68,21 +68,51 @@ git clone https://github.com/photoholmes/photoholmes.git
 ```
 screenguard/
 ├── src/                          # React frontend
-│   ├── pages/Index.tsx          # Main application page
-│   ├── components/ui/           # Reusable UI components
-│   └── ...
+│   ├── pages/
+│   │   ├── Index.tsx            # Main application page
+│   │   └── NotFound.tsx         # 404 error page
+│   ├── components/
+│   │   ├── ui/                  # Shadcn/UI components
+│   │   │   ├── alert.tsx
+│   │   │   ├── badge.tsx
+│   │   │   ├── button.tsx
+│   │   │   ├── card.tsx
+│   │   │   ├── progress.tsx
+│   │   │   ├── switch.tsx
+│   │   │   ├── toast.tsx
+│   │   │   └── toaster.tsx
+│   │   └── TransactionAnalysisResults.tsx  # Fraud analysis display
+│   ├── hooks/
+│   │   ├── use-mobile.tsx       # Mobile device detection
+│   │   └── use-toast.ts         # Toast notifications
+│   ├── lib/
+│   │   └── utils.ts             # Utility functions
+│   ├── App.tsx                  # Main app component
+│   ├── main.tsx                 # App entry point
+│   └── index.css                # Global styles
 ├── backend/                      # Flask backend
 │   ├── app.py                   # Main Flask application
-│   ├── model/
-│   │   ├── detector.py          # Core detection logic
-│   │   └── __init__.py
-│   ├── models/                  # AI model files (download separately)
-│   ├── config.py                # Configuration settings
+│   ├── run.py                   # Startup script with logging
 │   ├── requirements.txt         # Python dependencies
-│   └── run.py                   # Startup script
-└── README.md
+│   ├── config.py                # Configuration settings
+│   ├── model/
+│   │   ├── __init__.py
+│   │   ├── detector.py          # Core detection logic
+│   │   ├── simple_detector.py   # Basic tampering detection
+│   │   └── transaction_analyzer.py  # Fraud-specific analysis
+│   ├── models/                  # AI model files (download separately)
+│   ├── uploads/                 # Temporary file storage
+│   └── temp/                    # Processing workspace
+├── public/
+│   ├── favicon.ico
+│   ├── placeholder.svg
+│   └── robots.txt
+├── package.json                 # Node.js dependencies
+├── vite.config.ts              # Vite configuration
+├── tailwind.config.ts          # Tailwind CSS config
+├── tsconfig.json               # TypeScript configuration
+└── README.md                   # Project documentation
 ```
-
 ## 🔧 API Reference
 
 ### `POST /analyze`
