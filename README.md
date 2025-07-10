@@ -234,20 +234,5 @@ This project is for educational and research purposes only. Please respect the l
 - IFAKE: [License terms](https://github.com/grip-unina/IFAKE)
 - PhotoHolmes: [License terms](https://github.com/photoholmes/photoholmes)
 
-## 🆘 Support
-
-For issues and questions:
-1. Check the troubleshooting section in backend/README.md
-2. Review model integration guides
-3. Open an issue with detailed information
-
-## 🔮 Roadmap
-
-- [ ] Batch processing for multiple images
-- [ ] Video tampering detection
-- [ ] Advanced visualization of tampered regions
-- [ ] Model performance benchmarking
-- [ ] Mobile app version
-- [ ] API rate limiting and authentication
 
 ---
